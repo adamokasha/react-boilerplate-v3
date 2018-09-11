@@ -4,12 +4,12 @@ const HtmlWebPackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 // NODE_ENV will be 'production' on heroku, 'test' in testing env, and if neither it will be 'development'
-process.env_NODE_ENV = process.env.NODE_ENV || 'development';
+process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 
 // Load test or development env variables
-if (process.env_NODE_ENV === 'test') {
+if (process.env.NODE_ENV === 'test') {
   require('dotenv').config({ path: '.env.test' });
-} else if (process.env_NODE_ENV === 'development') {
+} else if (process.env.NODE_ENV === 'development') {
   require('dotenv').config({ path: '.env.development' });
 }
 
