@@ -7,8 +7,10 @@
   * Testing and development environment setup
 * Jest and Enzyme for testing
 
-### Usage
-Simply clone the repo and npm install.
+### Usage in Development
+1. Clone repo and install dependencies.
+2. Run 'npm run build' from cli to generate public/dist.
+3. Run 'npm run dev-server' for development with live-reloading.
 
 ### NPM Scripts
 #### **npm run build**
